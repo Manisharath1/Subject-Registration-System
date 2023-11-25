@@ -62,7 +62,7 @@ public class LoginServlet extends HttpServlet {
 			session.setAttribute("username", username);
 			session.setAttribute("role", "student");
 
-			// Redirect to the student dashboard
+			// student dashboard
 			response.sendRedirect("StudentDetailsServlet");
 		}
 		// Check if the user is an admin
@@ -72,8 +72,8 @@ public class LoginServlet extends HttpServlet {
 			session.setAttribute("username", username);
 			session.setAttribute("role", "admin");
 
-			// Redirect to the admin dashboard
-			response.sendRedirect("GetEnrollmentDetailsServlet");
+			//  admin dashboard
+			response.sendRedirect(request.getContextPath() + "/AdminHomePage.jsp");
 		} else {
 			// Invalid login, redirect back to the login page with an error message
 			response.sendRedirect("Login.jsp?error=1");

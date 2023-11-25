@@ -55,7 +55,7 @@ public class CourseEnrollmentServlet extends HttpServlet {
 	        enrollStudentInCourse(username, courseID);
 
 	        // Redirect back to the student dashboard or a confirmation page
-//	        response.sendRedirect("AdminDashboard.jsp");
+	        response.sendRedirect("StudentDashboard.jsp");
 	    }
 
 	    private void enrollStudentInCourse(String username, int courseID) {

@@ -99,13 +99,13 @@
         <h1>SignUp Form</h1>
         <div class="main-agileinfo">
             <form action="RegistrationServlet" method="post">
-                <input class="text" type="text" name="Username" placeholder="Username" required="">
+                <input class="text" type="text" name="username" placeholder="Username" required="">
                 <input class="text" type="password" name="password" placeholder="Password" required="">
                 <input class="text" type="text" name="name" placeholder="Name" required="">
                 <input class="text" type="text" name="domain" placeholder="Domain" required="">
                 <input type="submit" value="SIGNUP">
             </form>
-            <p>Don't have an Account? <a href="Login.jsp"> Login Now!</a></p>
+            <p>Have an Account? <a href="Login.jsp"> Login Now!</a></p>
         </div>
     </div>
 </body>
